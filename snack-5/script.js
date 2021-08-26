@@ -1,12 +1,13 @@
-var numero = [ ]
-for (var i = 0; i < 6 ; i++) {
-    var numeroDS = parseInt(prompt( "inserisci un numero dispari:"));
-    if (IsNotUneven(numeroDS) == false){
-    numero.push(numeroDS);
+var numeroDS = [];
+var numeroPR = [];
+for ( var i = 0; i < 6 ; i++ ) {
+    var numero = parseInt(prompt( "inserisci un numero dispari:"));
+    if ( numero % 2 == 1 ) {
+    numeroDS.push(numero);
 }
-else
-{
-    alert("Numero non accettato, è pari!");
+    else {
+        numeroPR.push(numero);
+    }
 }
-
-}
+console.log(numeroDS);
+console.log(numeroPR);
